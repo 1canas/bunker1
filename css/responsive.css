@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid {
+    width: 100%;
+    float: left;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+@media (min-width: 400px) {
+    .container {
+        width: 85%;
+        padding: 0; 
+    }
+}
+
+@media (min-width: 550px) {
+    .container {
+        width: 80%;
+    }
+    
+    .grid {
+        margin-left: 2%;
+    }
+        /*.grid:first-child {
+            margin-left: 0;
+        }*/
+
+    .two { width: calc((100% * 2 / 12) - 2%); }
+    .four { width: calc((100% * 4 / 12) - 2%); }
+    .six { width: calc((100% * 6 / 12) - 2%); }
+    .eight { width: calc((100% * 8 / 12) - 2%); }
+}

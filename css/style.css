@@ -1,0 +1,151 @@
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+/* promoção */
+.promocoes {
+    /* background-color: rgb(233, 233, 233); */
+    background-color: #454955;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+    .prom {
+        padding: 0 20px;
+        margin-left: 0;
+    }
+        .promocao {
+            border-radius: 5px;
+            background-color: white;
+            /* box-shadow: 1px 1px 4px rgb(204, 204, 204); */
+            box-shadow: 1px 1px 4px #272a30;
+            height: 25vh;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .banner {
+            background-color: #3f7d20;
+            width: 100%;
+            height: 40vh;
+        }
+
+/* contact-us */
+.contact-us {
+    height: 100vh;
+    background: #111;
+}
+    .contact-form {
+        margin-top: 5%;
+        position: relative;
+    }
+    .contact-form hr {
+        width: 70px;
+        height: 3px;    
+        border: 0;  
+        float: left;
+        background: #2DA32E;
+    }
+
+    .contact-form input, textarea{
+        width: 100%;
+        color: #EEE;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #bdbdbd;
+        font-size: 16px;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+        height: 30px;
+        margin-top: 35px;
+    }
+        .contact-form textarea {
+            height: 196px;
+            border-radius: 5px;
+            padding-top: 15px;
+        }
+
+    .contact-form button {
+        width: 100%;
+        border-radius: 4px;
+        border: none;        
+        color: #DDD;
+        text-transform: uppercase;
+        box-shadow: none;
+        margin-top: 20px;
+        height: 57px;
+        background: #207a22;
+    }
+
+    .contact-info li {
+        list-style: none;
+        float: left;
+        margin-top: 50px;
+        color: #DDD;
+    }
+        .contact-info i {
+            font-size: 45px;
+            color: #DDD;
+        }
+
+        .tel p {
+            margin-top: 10px;
+        }
+
+        .social-media li {
+            margin-right: 20px;
+        }
+            .social-media li:first-child {
+                margin-left: 30px;
+            }
+
+    .map {
+        height: 100vh;
+        width: 100%;
+    }
+        .map button {
+            display: none;
+        }
+
+
+/* receitas */
+.receitas {
+    color: white;
+}
+.receitas-opcoes {
+    width: 30%;
+    float: left;
+}
+.receita {
+    width: 50%;
+    height: 200px;
+    margin-top: 100px;
+    padding: 10px;
+    /* background-color: #f3f2f2; */
+    background-color: #d8d7d7;
+}
+
+@keyframes hover {
+    from {width: 50%;}
+    to {width: 100%;}
+}
+
+.receita .img {
+    background-color: rgb(255, 157, 157);
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    
+}
+
+.receitas-escolhida {
+    /* background-color: #f3f2f2; */
+    background-color: #d8d7d7;
+    width: 55%;
+    height: 100vh;
+    padding: 20px;
+    float: left;
+    list-style-position: inside;
+}
+
+.receitas-escolhida {
+    
+}

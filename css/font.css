@@ -1,0 +1,8 @@
+body, textarea {
+    font-family: proxima-nova, -appel-system, sans-serif;
+}
+
+h1 {
+    color: #DDD;
+    margin: 0;
+}
