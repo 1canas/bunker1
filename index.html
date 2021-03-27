@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font.css">
+
+    <script src="https://kit.fontawesome.com/71496b3f72.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+
+    <section class="promocoes">
+      <div class="banner"></div>
+
+      <div class="container prom">
+          <div class="promocao grid four"></div>
+          <div class="promocao grid two"></div>
+          <div class="promocao grid four"></div>
+          <div class="promocao grid two"></div>
+
+          <div class="promocao grid two"></div>
+          <div class="promocao grid four"></div>
+          <div class="promocao grid two"></div>
+          <div class="promocao grid four"></div>
+
+          <div class="promocao grid four"></div>
+          <div class="promocao grid two"></div>
+          <div class="promocao grid four"></div>
+          <div class="promocao grid two"></div>
+      </div>
+  </section>
+
+    <section class="contact-us container full-width">
+        <div class="contact-form grid four">
+            <h1>Contato</h1>
+            <hr>
+
+            <form action="">
+                <input type="text" id="name" placeholder="Nome"><br>
+                <input type="email" id="email" placeholder="Email"><br>
+                <textarea id="message" placeholder="Mensagem"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="contact-info">
+              <div class="tel">
+                <ul>
+                  <li><i class="fas fa-phone-alt" style="margin-right: 9px;"></i></li>
+                  <li><p>+55 11 94002-8002</p></li>
+                </ul>
+              </div>
+
+              <div class="social-media">
+                <ul>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="map grid eight" id="map"></div>
+        <script type="text/javascript">
+            var map = new ol.Map({
+              target: 'map',
+              layers: [
+                new ol.layer.Tile({
+                  source: new ol.source.OSM()
+                })
+              ],
+              view: new ol.View({
+                center: ol.proj.fromLonLat([37.41, 8.82]),
+                zoom: 4
+              })
+            });
+          </script>
+    </section>
+
+    <section class="receitas">
+      <div class="receitas-opcoes">
+          <div class="receita" id="receita">
+              <div class="img">
+              </div>
+              <div class="titulo">
+                  <h4>Caco de vrido com drogas</h4>
+              </div>
+          </div>
+
+          <div class="receita" id="receita">
+              <div class="img">
+              </div>
+              <div class="titulo">
+                  <h4>Caco de vrido com drogas</h4>
+              </div>
+          </div>
+          
+          <div class="receita" id="receita">
+              <div class="img">
+              </div>
+              <div class="titulo">
+                  <h4>Caco de vrido com drogas</h4>
+              </div>
+          </div>
+      </div>
+
+      <div class="receitas-escolhida">
+          <div class="img">
+
+          </div>
+          <div class="titulo">
+              <h2>Caco de vrido com drogas</h2>
+          </div>
+          
+          <div class="modo-preparo">
+              <ul>
+                  <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus nunc, rutrum in interdum at, facilisis et sem. In dui mi, rutrum id mattis id, feugiat nec sapien.
+                  </li>
+                  <li>
+                      Maecenas aliquam ante non magna suscipit tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  </li>
+                  <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus nunc, rutrum in interdum at, facilisis et sem. In dui mi, rutrum id mattis id, feugiat nec sapien.
+                  </li>
+                  <li>
+                      Maecenas aliquam ante non magna suscipit tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  </li>
+                  <li>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus nunc, rutrum in interdum at, facilisis et sem. In dui mi, rutrum id mattis id, feugiat nec sapien.
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
